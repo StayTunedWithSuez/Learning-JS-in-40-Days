@@ -1,0 +1,27 @@
+// Outer function declaration
+function outerCount() {
+    let count = 0; // The variable 'count' is defined in the outer function's scope
+
+    // Returning the inner function which forms a closure
+    return function innerCount() {
+        count++; // The inner function has access to the 'count' variable from the outer function
+        console.log(count);
+    }
+}
+
+// Calling the outer function, which returns the inner function (closure)
+const retVal = outerCount();
+
+// The first time retVal() is called, the inner function accesses and increments 'count' (which is 0 initially)
+// Output: 1
+retVal();
+
+// The second time retVal() is called, 'count' still holds its previous value (1), so it increments to 2
+// Output: 2
+retVal();
+
+// The third time retVal() is called, 'count' is 2, so it increments to 3
+// Output: 3
+retVal();
+
+
