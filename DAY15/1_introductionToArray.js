@@ -33,3 +33,5 @@ console.log(salad[5]); //Output: 🥕
 for(let i = 0; i <= salad.length -1; i++) {
     console.log(`Element at index ${i}: ${salad[i]}`);
 }
+
+//This is a test line
