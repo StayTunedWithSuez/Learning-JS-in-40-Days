@@ -57,9 +57,16 @@ console.log(retShift); //Output: 🥜
 console.log(salad);
 
 
-//Copy and clone an array using slice()
+//Copy and clone an array 
+// using slice()
 const saladCopy = salad.slice();
 console.log("Before Copy: ", salad);
 console.log("After Copy: ", saladCopy);
 console.log(salad === saladCopy); //Output: false
 
+//Determine if it is an array or not
+//using Array.isArray()
+console.log(Array.isArray(salad)); //Output: true
+console.log(Array.isArray("🍅")); //Output: false
+console.log(Array.isArray({tomato: "🍅"})); //Output: false
+console.log(Array.isArray([])); //Output: true
