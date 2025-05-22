@@ -43,3 +43,15 @@ console.log(salad);
 const unRet = salad.unshift("🥜"); //It actually return the number or elements
 console.log(unRet); //Output: 9
 console.log(salad);
+
+
+//Remove elements from an array
+//using pop() - remove an element from the end
+const retPop = salad.pop(); //Returns the removed element
+console.log(retPop); //Output: 🥜
+console.log(salad);
+
+//using shift() - remove an element from the start
+const retShift = salad.shift(); //Returns the removed element
+console.log(retShift); //Output: 🥜
+console.log(salad);
