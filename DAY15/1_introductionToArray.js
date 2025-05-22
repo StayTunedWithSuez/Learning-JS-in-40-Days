@@ -55,3 +55,11 @@ console.log(salad);
 const retShift = salad.shift(); //Returns the removed element
 console.log(retShift); //Output: 🥜
 console.log(salad);
+
+
+//Copy and clone an array using slice()
+const saladCopy = salad.slice();
+console.log("Before Copy: ", salad);
+console.log("After Copy: ", saladCopy);
+console.log(salad === saladCopy); //Output: false
+
