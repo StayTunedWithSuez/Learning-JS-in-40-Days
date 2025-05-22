@@ -33,3 +33,13 @@ console.log(salad[5]); //Output: 🥕
 for(let i = 0; i <= salad.length -1; i++) {
     console.log(`Element at index ${i}: ${salad[i]}`);
 }
+
+//Add elements to an array
+//using push() - add element at the end
+const ret= salad.push("🥜"); //It actually return the number or elements
+console.log(ret); //Output: 8
+console.log(salad);
+//using unshift() - add element at start
+const unRet = salad.unshift("🥜"); //It actually return the number or elements
+console.log(unRet); //Output: 9
+console.log(salad);
