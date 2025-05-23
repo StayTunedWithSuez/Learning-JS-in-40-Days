@@ -15,3 +15,4 @@ const veggies = ['🥦', '🥒', '🌽', '🥕'];
 
 const emotionalVeggies = [...emotions, ...veggies];
 console.log(emotionalVeggies);
+
