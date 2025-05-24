@@ -38,3 +38,26 @@
     console.log(colors); //Output: ['red', 'pink', 'pink']
 }
 
+//includes() method -
+//Checks whether an element is in an array or not
+{
+    //arrayName.includes([element]);
+    const names = ["Suez", "Sohan", "Tom", "Alex"];
+    console.log(names.includes("Suez")); //Output: true
+    console.log(names.includes("suez")); //Output: false
+    console.log(names.includes("July")); //Output: false
+}
+
+//indexOf() method -
+//Used to get the index position of a particular value
+{
+    //arrayName.indexOf([element]);
+    const names = ["Suez", "Sohan", "Tom", "Alex", "Tom"];
+    console.log(names.indexOf("Sohan")); //Output: 1
+
+    //For repeated elements it returns the index of first occurrence
+    console.log(names.indexOf("Tom")) //Output: 2
+
+    //For non existing element it returns -1
+    console.log(names.indexOf("Rob")); //Output: -1
+}
