@@ -8,3 +8,4 @@ console.log(array2.length); //Output: 7
 
 array1.length = 9
 console.log(array1);
+
