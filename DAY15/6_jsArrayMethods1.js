@@ -61,3 +61,13 @@
     //For non existing element it returns -1
     console.log(names.indexOf("Rob")); //Output: -1
 }
+
+//lastIndexOf() method-
+//Same as indexOf() method but for repeated elements-
+//it returns the index of last occurrence
+
+{
+    const names = ["Suez", "Sohan", "Tom", "Alex", "Tom"];
+    console.log(names.lastIndexOf("Tom")); //Output: 4
+}
+
