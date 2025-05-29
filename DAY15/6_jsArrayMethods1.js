@@ -79,6 +79,16 @@
     console.log(numbers); //Output: [4, 3, 2, 1]
 }
 
+//toReversed()
+//Immutable version of reverse() method -
+{
+    const items = [1, 2, 3];
+    const reversedItems = items.toReversed();
+
+    console.log(reversedItems); //Output: [3, 2, 1]
+    console.log(items); //Output: [1, 2, 3]
+}
+
 
 //sort() method -
 //One of the most useful array methods
@@ -125,6 +135,16 @@
     console.log("ages with descending sorting: ", ages);
 }
 
+//toSorted() method -
+//Immutable version of sort() method
+
+{
+    const months = ["Mar", "Jan", "Feb", "Dec"];
+    const sortedMonths = months.toSorted();
+    console.log(sortedMonths);
+    console.log(months);
+}
+
 
 //splice() method -
 //used to delete, add and modify the elements of an array
@@ -137,6 +157,16 @@
     console.log(retNames); //Output: ['alex']
     console.log(names); //Output: ['tom', 'zack', 'john', 'bob']
 
+}
+
+//toSpliced() method-
+//Immutable version of splice() method
+
+{
+    const months = ["Jan", "Mar", "Apr", "May"];
+    const months2 = months.toSpliced(1, 0, "Feb");
+    console.log("Original Array", months);
+    console.log("Spliced Array", months2);
 }
 
 
@@ -201,3 +231,20 @@
     console.log(groupedByMoreThan5000);
 }
 
+//with() method 
+//An immutable method
+//Replace array element without changing the source array
+{
+    //arrayName.with([index], [value])
+    const numbers = [1, 2, 3, 4, 5];
+
+    const newNumbers = numbers.with(2,6);
+    console.log(newNumbers); //Output:[1, 2, 6, 4, 5]
+    console.log(numbers); //Output: [1, 2, 3, 4, 5]
+
+    //Possible to input negative index
+    //Negative index counts from right to left from -1.
+    const anotherArray = numbers.with(-2, 8);
+    console.log(numbers);
+    console.log(anotherArray); // Output: [1, 2, 3, 8, 5]
+}
