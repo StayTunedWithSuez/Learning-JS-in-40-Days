@@ -243,7 +243,7 @@
     console.log(numbers); //Output: [1, 2, 3, 4, 5]
 
     //Possible to input negative index
-    //Negative index counts from right to left from -1.
+    //Negative index counts from right to left and starts from -1.
     const anotherArray = numbers.with(-2, 8);
     console.log(numbers);
     console.log(anotherArray); // Output: [1, 2, 3, 8, 5]
