@@ -48,6 +48,7 @@
     console.log(names.includes("July")); //Output: false
 }
 
+
 //indexOf() method -
 //Used to get the index position of a particular value
 {
