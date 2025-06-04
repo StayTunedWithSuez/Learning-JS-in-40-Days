@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to DOM</title>
+</head>
+
+  <!-- Element Node: Represents an HTML element -->
+  <h1 id="title" class="main-heading">Hello, DOM!</h1>
+
+  <img src="image.jpg" alt="Example Image" id="sampleImage">
+
+  <p>This is a <strong>paragraph</strong> with <em>nested</em> elements.</p>
+
+  <script>
+    // 1. Document - The root of the DOM tree
+    console.log("Document object:", document);
+
+    // 2. Node - Every item in the DOM is a Node (Element, Text, Attribute)
+    let node = document.getElementById("title");
+    console.log("Node (Element Node):", node);
+
+    // 3. Element - A specific type of node (like an HTML tag)
+    console.log("Element node tag name:", node.tagName);
+
+    // 4. NodeList - Collection of nodes (not a real array)
+    let allParagraphs = document.querySelectorAll("p");
+    console.log("NodeList of <p> elements:", allParagraphs);
+
+    // 5. Attr - Represents an individual attribute
+    let image = document.getElementById("sampleImage");
+    let srcAttr = image.getAttribute("src");
+    console.log("Attr (src):", srcAttr);
+
+    // 6. NamedNodeMap - A collection of all attributes of an element
+    let attributes = image.attributes;
+    console.log("NamedNodeMap (attributes):", attributes);
+
+    // Loop through NamedNodeMap
+    for (let attr of attributes) {
+      console.log("Attribute name:", attr.name, " | value:", attr.value);
+    }
+  </script>
+
+</body>
+</html>
