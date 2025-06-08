@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <script defer src="5_DomManipulation.js"></script>
+</head>
+<body>
+    <style>
+        .main-class {
+            font-size: large;
+            padding: 2px;
+            border: 2px solid red;
+        }
+
+        .secondary-class {
+            border: 2px solid green;
+            background-color: teal;
+            color: white;
+        }
+        .layout{
+            height: 80px;
+            width: 300px;
+        }
+    </style>
+
+    <h1><u>DOM Manipulation</u></h1>
+    <p id="p-id" style="background-color: green; color: white;">Let's do some style.</p>
+
+    <div id="main-id" class="main-class">
+        <p class="info">
+            <span id="text">[static]: Manipulating using element.className</span>
+        </p>
+        <!-- I have added a comment here -->
+    </div>
+    <br>
+    <div id="main-id2" class="main-class layout">
+        <p class="info">
+            <span id="text">[static]: Manipulating using element.classList</span>
+        </p>
+        <!-- I have added a comment here -->
+    </div>
+</body>
+</html>
+
+
+
+
+
