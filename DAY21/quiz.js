@@ -70,7 +70,7 @@ function countdown() {
 }
 
 function updateTimer() {
-    timerElem.textContent = timeLeft === 0 ? "Time Over" : `⏱️ ${timeLeft}`;
+    timerElem.textContent = timeLeft === 0 ? "Time Over" : `⏱️ ${timeLeft}`; 
 }
 
 function selectAnswer(index, shouldScore) {
