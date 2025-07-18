@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="src/style.css">
+    <script async src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script defer src="src/main.js"></script>
+</head>
+<body>
+    <div class="bg-gray-700 text-white mx-auto p-4 w-9/10 mt-4 sm:w-7/10">
+        <h1 class="font-bold text-center text-xl">Country Explorer</h1>
+        <div class="mt-4 flex flex-col gap-3 sm:flex-row">
+            <input type="text" id="searchCountry" class="border w-full p-2 placeholder-gray-300 sm:w-7/10" placeholder="Enter country name...">
+
+            <button id="searchBtn" class="border border-blue-300 p-2 rounded-md w-full bg-blue-900 hover:bg-blue-600 cursor-pointer transition sm:w-3/10">Search</button>
+        </div>
+
+        <div id = "showResponse" class="mt-6 border flex flex-col rounded-md p-2 w-full">
+            <div id="loading" class="hidden mx-auto ">Loading...</div>
+            <div id="errorMsg" class="hidden p-8 mx-auto text-red-500">Something went wrong!</div>
+            <div id="countryDetails" class="flex flex-col gap-2"></div>
+            <div id="map" class="mt-2" style="height: 400px;"></div>
+
+        </div>
+    </div>
+</body>
+</html>
