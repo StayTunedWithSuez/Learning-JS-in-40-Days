@@ -1,0 +1,59 @@
+## Object represents real world entities.
+    * If something can be described as a thing with some characteristics and behaviors then it can be turned into an object.
+    *   Characteristics -> Properties
+        Behaviors -> methods (functions as value)
+
+## Class is a blue print or plan which is used to create an object.
+
+## OOP
+    Let's build a city for a game -
+        City:
+            -> Houses
+                -> roof
+                -> doors
+                -> windows
+            -> Chars
+                -> model
+                -> brand
+                -> color
+                -> wheels
+            -> People
+                -> eyes
+                -> ears
+                -> gender
+            -> Hospitals
+            -> Roads
+    Object oriented programming is a programming concept where everything is organized using objects.
+
+## Real world examples of OOP:
+    1. Game Development => Objects like Player, Enemy, Weapon, gameplay logic.
+    2. E-commerce website => User, Product, Cart, Order.
+    3. Mobile Apps => Screen, Button, Notification.
+    4. Banking Software => Customer, Account, Transaction.
+    5. Vehicle Management System => Vehicles like Truck, Busses, Cars etc.
+
+
+## Five key OOP principles: 
+    1. Abstraction => In JavaScript OOP, abstraction means hiding internal details of an object and exposing only what’s necessary for use, usually through methods and public properties, while keeping implementation details private.
+        * It is actually the process of hiding internal complexity and exposing what is necessary for the user to interact with.
+    
+    2. Encapsulation => Is the bundling of data and methods that operate on that data into a single unit, usually a class - and restricting direct access to some of the object's components. or,
+        *Encapsulation means keeping related data and methods together in one unit (like a class) and blocking direct access to some parts, so they can only be changed in controlled ways.
+
+    3. Inheritance => It allows one class (child) to reuse the properties and methods of another class (parent), reducing duplication and promoting reusability.
+        * Inheritance uses "is a" notation.
+
+    4. Polymorphism => it means "many forms". It  allows objects of different classes to be treated as if they are of the same type, but behave differently based on their class-specific implementations.
+
+    5. Composition => Composition is a design principle where one class contains or is composed of one or more objects of other classes to reuse their functionality, instead of inheriting from them.
+        * Inheritance shares behavior via class hierarchy, while composition shares behavior by assembling independent parts.
+        * Inheritance: Dog inherits from Animal.
+        * Composition: Car has an Engine and Wheels.
+        * Composition uses "has a" notation.
+
+## Five principles at a glance:
+    1. Abstraction => Hide complexity, expose interface
+    2. Encapsulation => Bundle + protect state
+    3. Inheritance => Share logic across classes
+    4. Polymorphism => Same method, different behaviors
+    5. Composition => Build by combining units
