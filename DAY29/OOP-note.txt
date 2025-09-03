@@ -12,7 +12,7 @@
                 -> roof
                 -> doors
                 -> windows
-            -> Chars
+            -> Cars
                 -> model
                 -> brand
                 -> color

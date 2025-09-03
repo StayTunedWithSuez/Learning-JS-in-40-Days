@@ -1,6 +1,6 @@
 
 /* 
-//Syntax of fetch() API
+//Syntax of fetch(URL, options) API
 
 //Using .then and .catch
 fetch(URL, options) //It always returns a promise
@@ -43,7 +43,7 @@ Check this out: https://www.youtube.com/watch?v=Qf2BBZVaAg8
 
 //--------------------------------------------------------------------------------------------
 
-//Using fetch() getting resources
+//Using fetch(URL, Options) getting resources
 
 //If no options by default is get method
 
