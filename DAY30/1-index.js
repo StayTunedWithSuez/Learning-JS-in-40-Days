@@ -279,9 +279,14 @@ class Teacher extends Human {
 const kabul = new Student("Kabul", 14, 9);
 const babul = new Teacher("Babul", 35, "Mathematics");
 
+//Overwritten methods from the parent class(Polymorphism)
 kabul.introduce();
 babul.introduce();
 
 //Inherited methods from the parent class
 kabul.sleep();
 babul.sleep();
+
+
+//--------------------------------------------------------------------------
+//OOP with classes
