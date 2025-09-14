@@ -7,4 +7,4 @@ const sub = (a, b) => {
 }
 
 
-export {sum, sub}
+export {sum, sub} //Named export
